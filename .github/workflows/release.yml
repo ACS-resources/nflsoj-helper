@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Upd script version
+        run: |
+          echo ${{ github.ref }} > temp
+          python ./release.py
+      - name: Prepare file
+        run: mv index.js nflsoj-helper.min.user.js
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          body_path: rel-CHANGELOG.md
+          files: nflsoj-helper.min.user.js

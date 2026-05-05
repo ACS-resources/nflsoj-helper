@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="#">
-    <img alt="NFLSOJ helper" src="https://raw.githubusercontent.com/NFLSCode/nflsoj-helper/master/icon1024.png" width="128">
+    <img alt="NFLSOJ helper" src="https://raw.githubusercontent.com/NFLSCode/nflsoj-helper/master/images/icon1024.png" width="128">
   </a>
 </p>
 <p align="center" style="font-size:1000;">
@@ -17,6 +17,16 @@
 
 ---
 
+NFLSOJ 不再使用魔改版 SYZOJ，本项目完结。
+
+---
+
+## Before installing
+
+This is a `give-a-star-to-use` repo. Star this repo to use.
+
 ## How to use it
 
-Just add script [`main.js`](main.js) into your tampermonkey.
+First, download [tampermonkey](https://www.tampermonkey.net). Then, click `nflsoj-helper.min.user.js` [here](https://github.com/NFLSCode/nflsoj-helper/releases/latest).
+
+Enjoy!
